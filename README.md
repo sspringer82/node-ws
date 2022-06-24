@@ -21,7 +21,11 @@ https://github.com/sspringer82/node-ws
 - Semver: https://docs.npmjs.com/about-semantic-versioning
 - Lizenzen: https://choosealicense.com/
 - Lizenzchecker: https://www.npmjs.com/package/license-checker
--
+- NPM scripts: https://docs.npmjs.com/cli/v8/using-npm/scripts
+- NPM Trends: https://www.npmtrends.com/
+- https://overreacted.io/npm-audit-broken-by-design/
+- npm outdated: https://docs.npmjs.com/cli/v8/commands/npm-outdated
+- npm check updates: https://www.npmjs.com/package/npm-check-updates
 
 # eine neue Applikation
 
