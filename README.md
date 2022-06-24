@@ -32,3 +32,21 @@ https://github.com/sspringer82/node-ws
 1. .gitignore mit node_modules
 2. README.md
 3. `npm init` oder `npm init -y`
+
+# VSCode Plugins
+
+- ESLint
+- GitLens
+- Live Server
+- Live Share
+- Open in Browser
+
+# Debugging
+
+- https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+- https://www.jetbrains.com/help/webstorm/running-and-debugging-node-js.html
+- Node Debugger
+  - node --inspect-brk index.js
+  - Chrome öffnen: chrome://inspect
+  - Remote Target auswählen
+  - Wie gewohnt mit den Chrome Devtools arbeiten
