@@ -1,12 +1,12 @@
 const model = require('./books.model');
 
 module.exports = {
-  getAllBooks(request, response) {
-    response.json(model.getAllBooks());
+  async getAllBooks(request, response) {
+    response.json(await model.getAllBooks());
   },
-  getBookById(request, response) {
+  async getBookById(request, response) {
     const id = parseInt(request.params.id, 10);
-    const book = model.getBookById(id);
+    const book = await model.getBookById(id);
     if (book === undefined) {
       response.statusCode = 404;
       response.end();
@@ -14,19 +14,19 @@ module.exports = {
       response.json(book);
     }
   },
-  createBook(request, response) {
-    const newBook = model.createBook(request.body);
+  async createBook(request, response) {
+    const newBook = await model.createBook(request.body);
     response.statusCode = 201;
     response.json(createdBook);
   },
-  updateBook(request, response) {
+  async updateBook(request, response) {
     const id = parseInt(request.params.id, 10);
-    const updatedBook = model.updateBook(id, request.body);
+    const updatedBook = await model.updateBook(id, request.body);
     response.json(updatedBook);
   },
-  removeBook(request, response) {
+  async removeBook(request, response) {
     const id = parseInt(request.params.id, 10);
-    model.removeBook(id);
+    await model.removeBook(id);
     response.statusCode = 204;
     response.end();
   },
