@@ -1,0 +1,11 @@
+- Fehlerbehandlung (404)
+- Asynchronität
+- Modulsystem commonjs => ECMAScript 
+- Middleware (Logger, Compression, CORS, Helmet)
+- Architektur (M(V)C)
+- Tests
+- Datenbank
+  - ORM
+- GraphQL
+- TypeScript
+

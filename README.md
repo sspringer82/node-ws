@@ -27,6 +27,7 @@ https://github.com/sspringer82/node-ws
 - npm outdated: https://docs.npmjs.com/cli/v8/commands/npm-outdated
 - npm check updates: https://www.npmjs.com/package/npm-check-updates
 - Nodemon: https://nodemon.io/
+- MDN: https://developer.mozilla.org/
 
 # eine neue Applikation
 

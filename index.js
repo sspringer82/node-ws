@@ -1,4 +1,5 @@
 const express = require('express');
+const http = require('node:http');
 
 console.log('initializing app');
 const app = express();
@@ -19,7 +20,12 @@ app.get('/books', (request, response) => {
 app.get('/books/:id', (request, response) => {
   const id = parseInt(request.params.id, 10);
   const book = books.find((b) => b.id === id);
-  response.json(book);
+  if (book === undefined) {
+    response.statusCode = 404;
+    response.end();
+  } else {
+    response.json(book);
+  }
 });
 app.post('/books', (request, response) => {
   const newBook = request.body;
@@ -27,6 +33,7 @@ app.post('/books', (request, response) => {
 
   const createdBook = { ...newBook, id };
   books.push(createdBook);
+  response.statusCode = 201;
   response.json(createdBook);
 });
 app.put('/books/:id', (request, response) => {
@@ -40,7 +47,8 @@ app.delete('/books/:id', (request, response) => {
   const id = parseInt(request.params.id, 10);
   const index = books.findIndex((b) => b.id === id);
   books.splice(index, 1);
-  response.json();
+  response.statusCode = 204;
+  response.end();
 });
 
 app.listen(8080, () =>
