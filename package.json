@@ -1,4 +1,6 @@
 {
+  "type": "module",
+  "private": "true",
   "name": "node-ws",
   "version": "1.0.0",
   "description": "here goes the blabla",

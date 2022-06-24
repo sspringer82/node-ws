@@ -1,8 +1,9 @@
 - Fehlerbehandlung (404)
 - Asynchronität
+- Architektur (M(V)C)
+
 - Modulsystem commonjs => ECMAScript 
 - Middleware (Logger, Compression, CORS, Helmet)
-- Architektur (M(V)C)
 - Tests
 - Datenbank
   - ORM

@@ -1,5 +1,5 @@
-const express = require('express');
-const bookRouter = require('./books');
+import express from 'express';
+import bookRouter from './books/books.router.js';
 
 const app = express();
 

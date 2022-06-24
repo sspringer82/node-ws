@@ -28,6 +28,12 @@ https://github.com/sspringer82/node-ws
 - npm check updates: https://www.npmjs.com/package/npm-check-updates
 - Nodemon: https://nodemon.io/
 - MDN: https://developer.mozilla.org/
+- https://node.green/
+- https://www.destroyallsoftware.com/talks/wat
+- https://www.ecma-international.org/wp-content/uploads/ECMA-262_13th_edition_june_2022.pdf
+- https://javascript.info/
+- https://exploringjs.com/
+-
 
 # eine neue Applikation
 

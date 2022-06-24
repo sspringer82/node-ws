@@ -31,4 +31,4 @@ const model = {
   },
 };
 
-module.exports = model;
+export default model;

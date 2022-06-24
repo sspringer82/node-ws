@@ -1,6 +1,6 @@
-const model = require('./books.model');
+import model from './books.model.js';
 
-module.exports = {
+const controller = {
   async getAllBooks(request, response) {
     response.json(await model.getAllBooks());
   },
@@ -31,3 +31,5 @@ module.exports = {
     response.end();
   },
 };
+
+export default controller;
