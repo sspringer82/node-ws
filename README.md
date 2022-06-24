@@ -26,6 +26,7 @@ https://github.com/sspringer82/node-ws
 - https://overreacted.io/npm-audit-broken-by-design/
 - npm outdated: https://docs.npmjs.com/cli/v8/commands/npm-outdated
 - npm check updates: https://www.npmjs.com/package/npm-check-updates
+- Nodemon: https://nodemon.io/
 
 # eine neue Applikation
 
@@ -49,4 +50,4 @@ https://github.com/sspringer82/node-ws
   - node --inspect-brk index.js
   - Chrome öffnen: chrome://inspect
   - Remote Target auswählen
-  - Wie gewohnt mit den Chrome Devtools arbeiten
+  - Wie gewohnt mit den Chrome Devtools **arbeiten**

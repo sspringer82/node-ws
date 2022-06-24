@@ -4,24 +4,43 @@ console.log('initializing app');
 const app = express();
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.write('foo');
-  res.write('foo');
-  res.write('foo');
-  res.end('bar');
-
-  console.log('request incoming');
-  res.json({
+const books = [
+  {
     id: 1,
-    title: 'Lord of the rings',
+    title: 'LotR',
+    isbn: '123-1231231234',
     author: 'J R R Tolkien',
-  });
-});
+  },
+];
 
-app.post('/:id', (req, res) => {
-  console.log(req.body);
-  console.log(parseInt(req.params.id, 10));
-  res.json('foo');
+app.get('/books', (request, response) => {
+  response.json(books);
+});
+app.get('/books/:id', (request, response) => {
+  const id = parseInt(request.params.id, 10);
+  const book = books.find((b) => b.id === id);
+  response.json(book);
+});
+app.post('/books', (request, response) => {
+  const newBook = request.body;
+  const id = Math.max(...books.map((b) => b.id)) + 1;
+
+  const createdBook = { ...newBook, id };
+  books.push(createdBook);
+  response.json(createdBook);
+});
+app.put('/books/:id', (request, response) => {
+  const updatedBook = request.body;
+  const id = parseInt(request.params.id, 10);
+  const index = books.findIndex((b) => b.id === id);
+  books[index] = updatedBook;
+  response.json(updatedBook);
+});
+app.delete('/books/:id', (request, response) => {
+  const id = parseInt(request.params.id, 10);
+  const index = books.findIndex((b) => b.id === id);
+  books.splice(index, 1);
+  response.json();
 });
 
 app.listen(8080, () =>
