@@ -1,0 +1,39 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "JavaScript - das umfassende Handbuch",
+      "isbn": "978-3836286299",
+      "author_id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Clean Code",
+      "isbn": "978-0132350884",
+      "author_id": "2"
+    },
+    {
+      "id": "3",
+      "title": "Design Patterns",
+      "isbn": "978-0201633610",
+      "author_id": "3"
+    }
+  ],
+  "authors": [
+    {
+      "id": "1",
+      "firstname": "Philip",
+      "lastname": "Ackermann"
+    },
+    {
+      "id": "2",
+      "firstname": "Robert",
+      "lastname": "Martin"
+    },
+    {
+      "id": "3",
+      "firstname": "Erich",
+      "lastname": "Gamma"
+    }
+  ]
+}

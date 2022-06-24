@@ -2,6 +2,10 @@ import express from 'express';
 import bookRouter from './books/books.router.js';
 
 const app = express();
+app.get((req, res, next) => {
+  console.log('foozah');
+  next();
+});
 
 app.use(express.json());
 
